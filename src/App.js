@@ -8,8 +8,12 @@ function App() {
 	return (
 		<div className='App'>
 			<nav>
-				<Link to='/'>PokéDex</Link>
-				<Link to='/team'>My Team</Link>
+				<Link to='/'>
+					<h1>PokéDex</h1>
+				</Link>
+				<Link to='/team'>
+					<h1>My Team</h1>
+				</Link>
 			</nav>
 
 			<main>

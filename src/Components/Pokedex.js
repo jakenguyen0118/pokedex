@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Pokemon from './Pokemon'
+import './pokedex.css'
 
 const Pokedex = () => {
     
@@ -28,16 +29,18 @@ const Pokedex = () => {
         getPokemon()
     }, [])
 
-    // mapping pokemon array
+    // mapping pokemon array with conditional rendering so map isnt undefined
     let showPokedex = ''
     if (pokemonList[0]) {
-        showPokedex = pokemonList.map(pokemon => {
+        showPokedex = pokemonList.map((pokemon, index) => {
             return (
-                <div className='pokemon'>
-                    <p></p>
-                    <p>{pokemon.name}</p>
+                <div className='pokedex-container'>
+                    <div className='pokemon'>
+                        <p>No. {index + 1}</p>
+                        <p>{pokemon.name}</p>
+                    </div>
                 </div>
-            )
+			)
         })
     }
 

@@ -1,0 +1,19 @@
+div.pokemon {
+    display: flex;
+    justify-content: center;
+}
+
+div.pokemon p {
+    margin: 5px;
+    font-size: 20px;
+}
+
+/* looked this up on w3schools https://www.w3schools.com/cssref/sel_firstletter.asp */
+div.pokemon p::first-letter {
+    text-transform: capitalize;
+}
+
+div.pokedex-container {
+    background: turquoise;
+    width: 100%;
+}
