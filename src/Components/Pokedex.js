@@ -24,7 +24,6 @@ const Pokedex = () => {
             })
     }
 
-    // useEffect mounting of the pokemon
     useEffect(() => {
         getPokemon()
     }, [])
@@ -38,17 +37,6 @@ const Pokedex = () => {
             )
         })
     }
-
-    // const handleClick = event => {
-    //     console.log('handle click', event)
-    //     const clickedPokemon = pokemonList.filter((pokemon) => {
-    //         return (
-    //             pokemon.name === event.target.value
-    //         )
-
-    //         setPokemonList(clickedPokemon[0].url)
-    //     })
-    // }
 
     return (
         <div>
