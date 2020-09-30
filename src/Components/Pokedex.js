@@ -33,7 +33,10 @@ const Pokedex = () => {
     if (pokemonList[0]) {
         showPokedex = pokemonList.map(pokemon => {
             return (
-                <div className='pokemon'>{pokemon.name}</div>
+                <div className='pokemon'>
+                    <p></p>
+                    <p>{pokemon.name}</p>
+                </div>
             )
         })
     }
