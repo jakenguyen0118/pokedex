@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 
-const Pokemon = props => {
-    console.log('props passed from pokedex', props)
+const Pokemon = (props) => {
+	console.log('props passed from pokedex', props)
 
-    return (
-        <div>pokemon here</div>
+	return (
+        <div>
+            pokemon here
+        </div>
     )
 }
 

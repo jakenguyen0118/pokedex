@@ -44,6 +44,10 @@ const Pokedex = () => {
         })
     }
 
+    const handleClick = event => {
+        console.log(event.target)
+    }
+
     return (
         <div>
             {showPokedex}
